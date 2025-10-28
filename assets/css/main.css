@@ -345,22 +345,22 @@ h6 {
   }
 }
 .glow-btn:hover {
-  box-shadow: 0 0 10px #1679AB, 0 0 20px #1679AB, 0 0 30px #1679AB; /* Blue glow */
+  box-shadow: 0 0 10px #1679AB, 0 0 20px #1679AB, 0 0 30px #1679AB; 
 }
 
 .btn-outline {
-    background-color: #ffffff; /* White background */
-    color: #1679AB; /* Text color (blue) */
-    border: 2px solid #1679AB; /* Border color */
+    background-color: #ffffff;
+    color: #1679AB; 
+    border: 2px solid #1679AB; 
     padding: 10px 30px;
     font-weight: 500;
     transition: all 0.3s ease;
 }
 
 .btn-outline:hover {
-    background-color: #1679AB; /* Blue on hover */
-    color: #ffffff; /* White text on hover */
-    box-shadow: 0 0 10px rgba(22, 121, 171, 0.5); /* Optional glow effect */
+    background-color: #1679AB; 
+    color: #ffffff; 
+    box-shadow: 0 0 10px rgba(22, 121, 171, 0.5); 
 }
 
 /* Mobile Navigation */
@@ -2883,3 +2883,41 @@ section,
   box-shadow: 0 0 10px #1679AB; /* glowing light effect */
   border-color: #1679AB; /* optional: change border color */
 }
+
+ 
+  /* Elegant Blue Notification */
+  .notification {
+    position: fixed;
+    top: 30px;
+    right: 50%;
+    transform: translateX(50%);
+    background: linear-gradient(135deg, #325264, #142027);
+    color: #fff;
+    padding: 18px 30px;
+    border-radius: 12px;
+    font-size: 17px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+    opacity: 0;
+    pointer-events: none;
+    z-index: 9999;
+    transition: opacity 0.6s ease, transform 0.6s ease;
+  }
+
+  .notification.show {
+    opacity: 1;
+    transform: translateX(50%) translateY(10px);
+    pointer-events: auto;
+  }
+
+  .notification.error {
+    background: linear-gradient(135deg, #8b0000, #3b0000);
+  }
+
+  html {
+  scroll-behavior: smooth;
+  scroll-snap-type: y proximity; /* optional for smoother stopping points */
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch; /* iOS momentum scroll */
+}
+
+  
