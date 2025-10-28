@@ -51,8 +51,8 @@
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="resume.html">Resume</a></li>
-          <!-- <li><a href="services.html">Services</a></li>
-          <li><a href="portfolio.html">Portfolio</a></li>
+           <li><a href="services.html">Services</a></li>
+          <!-- <li><a href="portfolio.html">Portfolio</a></li>
           <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
               <li><a href="#">Dropdown 1</a></li>
@@ -77,9 +77,9 @@
 
       <div class="header-social-links">
         <!-- <a href="https://twitter.com/YOUR_USERNAME" target="_blank" class="twitter"><i class="bi bi-twitter"></i></a> -->
-        <a href="https://wa.me/7094631723" target="_blank" class="whatsapp"><i class="bi bi-whatsapp"></i></a>
+        <a href="https://www.linkedin.com/in/siva-prakash-a-a6abbb31a" target="_blank" class="linkedin"><i class="bi bi-linkedin"></i></a>
         <a href="https://www.instagram.com/be_perfect.17" target="_blank" class="instagram"><i class="bi bi-instagram"></i></a>
-        <a href="https://www.linkedin.com/in/siva prakash A" target="_blank" class="linkedin"><i class="bi bi-linkedin"></i></a>
+        <a href="https://wa.me/7094631723" target="_blank" class="whatsapp"><i class="bi bi-whatsapp"></i></a>
       </div>
 
     </div>
@@ -146,7 +146,38 @@
               <h3>Get In Touch</h3>
               <p>Feel free to contact me for any projects, collaborations, or inquiries. I will get back to you as soon as possible</p>
 
-              <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
+              <form id="contact-form" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
+                  <div class="row gy-4">
+
+                    <div class="col-md-6">
+                      <input type="text" name="name" class="form-control" placeholder="Your Name" required>
+                    </div>
+
+                    <div class="col-md-6">
+                      <input type="email" name="email" class="form-control" placeholder="Your Email" required>
+                    </div>
+
+                    <div class="col-12">
+                      <input type="text" name="title" class="form-control" placeholder="Subject" required>
+                    </div>
+
+                    <div class="col-12">
+                      <textarea name="message" class="form-control" rows="6" placeholder="Message" required></textarea>
+                    </div>
+
+                    <div class="col-12 text-center">
+                      <button type="submit" class="btn btn-outline">Send Message</button>
+
+                      <div id="notification" class="notification">Message Sent Successfully!</div>
+
+                    </div>
+
+                  </div>
+
+                </form>
+
+
+              <!-- <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
                 <div class="row gy-4">
 
                   <div class="col-md-6">
@@ -175,7 +206,7 @@
                   </div>
 
                 </div>
-              </form>
+              </form> -->
 
             </div>
           </div>
@@ -198,7 +229,7 @@
         <!-- <a href="https://twitter.com/YOUR_USERNAME" target="_blank" class="twitter"><i class="bi bi-twitter"></i></a> -->
         <a href="https://wa.me/7094631723" target="_blank" class="whatsapp"><i class="bi bi-whatsapp"></i></a>
         <a href="https://www.instagram.com/be_perfect.17" target="_blank" class="instagram"><i class="bi bi-instagram"></i></a>
-        <a href="https://www.linkedin.com/in/siva prakash A" target="_blank" class="linkedin"><i class="bi bi-linkedin"></i></a>
+        <a href="https://www.linkedin.com/in/siva-prakash-a-a6abbb31a" target="_blank" class="linkedin"><i class="bi bi-linkedin"></i></a>
       </div>
       <div class="credits">
         <!-- All the links in the footer should remain intact. -->
@@ -230,6 +261,40 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<script>
+  (function() {
+    emailjs.init("DQS2Ic7BjYGgkx8wt"); // Your Public Key
+  })();
+
+  const form = document.getElementById('contact-form');
+  const notification = document.getElementById('notification');
+
+  function showNotification(message, isError = false) {
+    notification.textContent = message;
+    notification.classList.toggle('error', isError);
+    notification.classList.add('show');
+
+    // Hide after 3 seconds
+    setTimeout(() => {
+      notification.classList.remove('show');
+    }, 3000);
+  }
+
+  form.addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    emailjs.sendForm('service_jzc7jqc', 'template_zbl64ku', this)
+      .then(function() {
+        showNotification('Message Sent Successfully!');
+        form.reset();
+      }, function(error) {
+        showNotification('Failed to Send Message. Please Try Again!', true);
+        console.error('FAILED...', error);
+      });
+  });
+</script>
 
 </body>
 
