@@ -12,6 +12,12 @@
   <link href="./pic.jpeg" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
@@ -26,7 +32,6 @@
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
-
   
   <!-- =======================================================
   * Template Name: FolioOne
@@ -49,10 +54,12 @@
 
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="index.html" class="active">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="resume.html">Resume</a></li>
-          <!-- <li><a href="services.html">Services</a></li> -->
+          <li><a href="#hero" class="active">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#resume">Resume</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact">Contact</a></li>
+
           <!-- <li><a href="portfolio.html">Portfolio</a></li>
           <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a> -->
             <!-- <ul>
@@ -71,14 +78,14 @@
               <li><a href="#">Dropdown 4</a></li>
             </ul>
           </li> -->
-          <li><a href="contact.html">Contact</a></li>
+          <!-- <li><a href="contact.html">Contact</a></li> -->
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
 
       <div class="header-social-links">
         <!-- <a href="https://twitter.com/YOUR_USERNAME" target="_blank"><i class="bi bi-twitter"></i></a> -->
-        <a href="https://www.linkedin.com/in/siva prakash A/" target="_blank"><i class="bi bi-linkedin"></i></a>
+        <a href="https://www.linkedin.com/in/siva-prakash-a-a6abbb31a" target="_blank" class="linkedin"><i class="bi bi-linkedin"></i></a>
         <a href="https://www.instagram.com/be_perfect.17/" target="_blank"><i class="bi bi-instagram"></i></a>
         <a href="https://wa.me/7094631723" target="_blank"><i class="bi bi-whatsapp"></i></a>
       </div>
@@ -97,16 +104,16 @@
           <div class="col-lg-6 order-2 order-lg-1">
             <div class="hero-content">
               <h1 data-aos="fade-up" data-aos-delay="200">Hello, I'm <span class="highlight">Siva Prakash</span></h1>
-              <h2 data-aos="fade-up" data-aos-delay="300">Creative <span class="typed" data-typed-items="UI/UX Designer, Full stack Developer, Web Developer, Frontend Developer, Backend Developer"></span></h2>
+              <h2 data-aos="fade-up" data-aos-delay="300">Passionate <span class="typed" data-typed-items=" Full stack Developer, Data Scientist, Freelancer, AI Developer, Frontend Developer, Backend Developer"></span></h2>
               <p data-aos="fade-up" data-aos-delay="400">Passionate and detail-oriented developer skilled in web development, programming, and data management. I build efficient, responsive digital solutions, turning innovative ideas into functional and user-friendly applications.</p>
               <div class="hero-actions" data-aos="fade-up" data-aos-delay="500">
                 <!-- <a href="portfolio.html" class="btn btn-primary">View My Work</a> -->
-               <a href="contact.html" class="btn btn-outline glow-btn">Get In Touch</a>
+               <a href="contact.html" class="btn btn-outline glow-btn" style="border:2px solid var(--accent-color);color:var(--accent-color);transition:all .3s ease;" onmouseover="this.style.background='linear-gradient(90deg, var(--accent-color), color-mix(in srgb, var(--accent-color), transparent 50%))';this.style.color='#fff';this.style.boxShadow='0 0 15px var(--accent-color)';" onmouseout="this.style.background='';this.style.color='var(--accent-color)';this.style.boxShadow='';">Get In Touch</a>
 
               </div>
               <div class="social-links" data-aos="fade-up" data-aos-delay="600">
                 <!-- <a href="https://twitter.com/YOUR_USERNAME" target="_blank"><i class="bi bi-twitter"></i></a> -->
-                <a href="https://www.linkedin.com/in/siva prakash A/" target="_blank"><i class="bi bi-linkedin"></i></a>
+                <a href="https://www.linkedin.com/in/siva-prakash-a-a6abbb31a" target="_blank" class="linkedin"><i class="bi bi-linkedin"></i></a>
                 <a href="https://www.instagram.com/be_perfect.17/" target="_blank"><i class="bi bi-instagram"></i></a>
                 <a href="https://wa.me/7094631723" target="_blank"><i class="bi bi-whatsapp"></i></a>
             </div>
@@ -142,18 +149,679 @@
 
   </main>
 
+  
+
+    <main class="main">
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>About</h2>
+        <p>Passionate about creating impactful and efficient web applications, I combine front-end and back-end expertise to deliver seamless digital experiences.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <!-- Intro + Photo -->
+        <div class="row align-items-center justify-content-between gy-5 mb-5">
+          <div class="col-lg-7" data-aos="fade-right" data-aos-delay="150">
+            <div class="intro-content">
+              <span class="eyebrow">Hello there</span>
+              <h2 class="headline">Hi, I'm Siva Prakash - a calm-minded creative developer crafting serene digital journeys</h2>
+              <p class="lead">
+                I am a dedicated Developer with experience in building responsive and scalable web applications. I focus on writing clean, maintainable code while ensuring seamless functionality and engaging user experiences.
+              </p>
+              <p>
+                   I enjoy tackling complex challenges, learning new technologies, and collaborating with teams to transform innovative ideas into practical, high-quality solutions.
+              </p>
+
+              <div class="cta-group">
+                <a href="./SIVA PRAKASH - RESUME.pdf" download class="btn btn-outline">
+                Download Resume <i class="bi bi-download"></i>
+              </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-5" data-aos="zoom-in" data-aos-delay="250">
+            <figure class="profile-figure text-center text-lg-end">
+              <img src="./pic.jpeg" alt="Portrait of Alex" class="img-fluid profile-photo">
+            </figure>
+          </div>
+        </div>
+        <!-- End Intro + Photo -->
+
+<!-- Skills Grid -->
+<div class="mb-5">
+  <div class="row g-4">
+    <div class="col-6 col-md-4 col-lg-3" data-aos="fade-up" data-aos-delay="120">
+      <div class="skill-item">
+        <i class="bi bi-laptop"></i>
+        <h3>HTML & CSS</h3>
+        <p>Building responsive and visually appealing websites.</p>
+      </div>
+    </div>
+    <div class="col-6 col-md-4 col-lg-3" data-aos="fade-up" data-aos-delay="420">
+      <div class="skill-item">
+        <i class="bi bi-bar-chart-line"></i>
+        <h3>Data Visualization</h3>
+        <p>Presenting insights using Matplotlib & Seaborn.</p>
+      </div>
+    </div>
+    <div class="col-6 col-md-4 col-lg-3" data-aos="fade-up" data-aos-delay="420">
+      <div class="skill-item">
+       <i class="bi bi-code-slash"></i>
+        <h3>Python</h3>
+        <p>Programming logic and scripting for applications and automation.</p>
+      </div>
+    </div>
+    <div class="col-6 col-md-4 col-lg-3" data-aos="fade-up" data-aos-delay="180">
+      <div class="skill-item">
+        <i class="bi bi-file-code"></i>
+        <h3>JavaScript</h3>
+        <p>Creating dynamic and interactive web applications.</p>
+      </div>
+    </div>
+    <div class="col-6 col-md-4 col-lg-3" data-aos="fade-up" data-aos-delay="240">
+      <div class="skill-item">
+        <i class="bi bi-server"></i>
+        <h3>SQL</h3>
+        <p>Designing and querying databases efficiently.</p>
+      </div>
+    </div>
+    <div class="col-6 col-md-4 col-lg-3" data-aos="fade-up" data-aos-delay="420">
+      <div class="skill-item">
+        <i class="bi bi-gear"></i>
+        <h3>Problem Solving</h3>
+        <p>Logical & algorithmic thinking.</p>
+      </div>
+    </div>
+    <div class="col-6 col-md-4 col-lg-3" data-aos="fade-up" data-aos-delay="300">
+      <div class="skill-item">
+        <i class="bi bi-bootstrap"></i>
+        <h3>Bootstrap</h3>
+        <p>Building responsive layouts quickly and effectively.</p>
+      </div>
+    </div>
+    <div class="col-6 col-md-4 col-lg-3" data-aos="fade-up" data-aos-delay="420">
+      <div class="skill-item">
+        <i class="bi bi-github"></i>
+        <h3>Git & GitHub</h3>
+        <p>Version control & collaboration.</p>
+      </div>
+    </div>
+  </div>
+</div>
+    
+<!-- End Skills Grid -->
+
+        <!-- Journey Timeline -->
+        <div class="mb-5">
+          <div class="row g-4">
+            <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="120">
+              <article class="timeline-item">
+                <span class="dot"></span>
+                <time>2023</time>
+                <h4>B.COM CA</h4>
+                <p>Completed Bachelor of Commerce in Computer Applications, gaining knowledge in accounting, business, and computer programming</p>
+              </article>
+            </div>
+            <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="240">
+              <article class="timeline-item">
+                <span class="dot"></span>
+                <time>2024</time>
+                <h4>Started MSDS Course</h4>
+                <p>Enrolled in Master in Software & Data Science to enhance programming and analytics skills.</p>
+              </article>
+            </div>
+            <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="180">
+              <article class="timeline-item">
+                <span class="dot"></span>
+                <time>2025</time>
+                <h4>Lead Frontend</h4>
+                <p>Led frontend development on projects, implementing responsive designs and optimizing user experience.</p>
+              </article>
+            </div>
+            <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
+              <article class="timeline-item">
+                <span class="dot"></span>
+                <time>2025</time>
+                <h4>Projects & Internships</h4>
+                <p>Worked on software development and data analysis projects to gain practical experience.</p>
+              </article>
+            </div>
+          </div>
+        </div>
+        <!-- End Journey Timeline -->
+
+        <!-- Quote -->
+        <blockquote class="personal-quote text-center mb-5" data-aos="fade-down" data-aos-delay="200">
+          <p>"Building clean and meaningful experiences through thoughtful code and quiet design."</p>
+        </blockquote>
+        <!-- End Quote -->
+
+        <!-- Fun Facts -->
+<div class="row g-3 justify-content-center">
+  <div class="col-6 col-md-3 col-lg-2" data-aos="zoom-in" data-aos-delay="120">
+    <div class="fact-pill">
+      <i class="bi bi-code-slash"></i>
+      <span>Coding</span>
+    </div>
+  </div>
+  <div class="col-6 col-md-3 col-lg-2" data-aos="zoom-in" data-aos-delay="160">
+    <div class="fact-pill">
+      <i class="bi bi-cup-hot"></i>
+      <span>Strong Coffee</span>
+    </div>
+  </div>
+  <div class="col-6 col-md-3 col-lg-2" data-aos="zoom-in" data-aos-delay="200">
+    <div class="fact-pill">
+      <i class="bi bi-lightbulb"></i>
+      <span>Innovative Ideas</span>
+    </div>
+  </div>
+  <div class="col-6 col-md-3 col-lg-2" data-aos="zoom-in" data-aos-delay="240">
+    <div class="fact-pill">
+      <i class="bi bi-controller"></i>
+      <span>Gaming</span>
+    </div>
+  </div>
+</div>
+<!-- End Fun Facts -->
+
+
+      </div>
+
+    </section><!-- /About Section -->
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Skills</h2>
+        <p>A collection of capabilities and expertise developed through experience and practice, reflecting a commitment to excellence, continuous learning, and professional growth</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row g-4 skills-animation">          
+          <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+            <div class="skill-box">
+              <h3>Data Analysis</h3>
+              <p>Expertise in Pandas, NumPy, and statistical techniques for insightful analysis</p>
+              <span class="text-end d-block">90%</span>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+            <div class="skill-box">
+              <h3>Python</h3>
+              <p>Building logical programs and data-driven applications efficiently</p>
+              <span class="text-end d-block">90%</span>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+            <div class="skill-box">
+              <h3>Java</h3>
+              <p>Expert in Core and Advanced Java concepts</p>
+              <span class="text-end d-block">85%</span>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+          </div>
+          
+          
+          <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+            <div class="skill-box">
+              <h3>HTML</h3>
+              <p>Creating structured and accessible web pages with clean markup.</p>
+              <span class="text-end d-block">90%</span>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
+            <div class="skill-box">
+              <h3>CSS</h3>
+              <p>Designing responsive layouts with creative and modern styling.</p>
+              <span class="text-end d-block">80%</span>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
+            <div class="skill-box">
+              <h3>JavaScript</h3>
+              <p>Adding interactivity and dynamic behavior to web applications.</p>
+              <span class="text-end d-block">90%</span>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+            <div class="skill-box">
+              <h3>Deep Learning</h3>
+              <p>Hands-on experience with neural networks using TensorFlow and Keras</p>
+              <span class="text-end d-block">80%</span>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="400">
+            <div class="skill-box">
+              <h3>SQL & Databases</h3>
+              <p>Strong querying skills with MySQL and database management</p>
+              <span class="text-end d-block">90%</span>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+                </div>
+              </div>
+            </div> 
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Skills Section -->
+</main>
+
+<main class="main">
+
+    <!-- Resume Section -->
+    <section id="resume" class="resume section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Resume</h2>
+        <p>Driven by curiosity and creativity, I design and develop digital solutions that combine logic, performance, and modern design.
+</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row">
+          <div class="col-lg-6">
+
+            <!-- Education Section -->
+            <div class="resume-item" data-aos="fade-up">
+              <h3 class="resume-title">Education</h3>
+
+              <div class="resume-content">
+                <article class="education-item">
+                  <h4>Bachelor of Commerce (Computer Applications)</h4>
+                  <h5>2023 - 2026</h5>
+                  <p class="institution"><em>University of Madras, Chennai</em></p>
+                  <p>Currently pursuing a degree focused on computer applications, programming, and database management, building a strong foundation for a career in IT</p>
+                </article>
+
+                <article class="education-item">
+                  <h4>Master of Software and Data Science (MSDS)</h4>
+                  <h5>2024 - 2025</h5>
+                  <p class="institution"><em>Apollo Computer Education, Chennai</em></p>
+                  <p>Learning software development, data analysis, SQL, Python, and modern web technologies to gain practical industry skills and hands-on project experience</p>
+                </article>
+              </div>
+            </div><!-- End Education Section -->
+          </div>
+
+          <div class="col-lg-6">
+            <!-- Professional Skills Section -->
+            <div class="resume-item skills-animation" data-aos="fade-up">
+              <h3 class="resume-title">Professional Skills</h3>
+              <div class="resume-content">
+                <div class="skill-item">
+                  <h4>Data Analysis</h4>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+                
+                <div class="skill-item">
+                  <h4>Python</h4>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+
+                <div class="skill-item">
+                  <h4>HTML & CSS</h4>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+
+                <div class="skill-item">
+                  <h4>JavaScript</h4>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+
+                <div class="skill-item">
+                  <h4>Database & SQL</h4>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+              </div>
+            </div><!-- End Professional Skills Section -->
+          </div>
+
+              
+      </div>
+
+    </section><!-- /Resume Section -->
+
+  </main>
+
+  <main class="main">
+
+    <!-- Services Section -->
+    <section id="services" class="services section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Services</h2>
+        <p>I blend creativity with technology to build elegant, user-centered websites and applications. From concept to completion, I focus on crafting clean interfaces and smooth interactions that bring your vision to life.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row justify-content-center g-5">
+
+          <div class="col-md-6" data-aos="fade-right" data-aos-delay="100">
+            <div class="service-item">
+              <div class="service-icon">
+                <i class="bi bi-code-slash"></i>
+              </div>
+              <div class="service-content">
+                <h3>Website Development</h3>
+                <p>We specialize in designing and developing responsive, user-friendly, and visually appealing websites tailored to your business needs. From concept to launch, we ensure seamless functionality, optimized performance, and a modern digital presence that stands out</p>
+                <!-- <a href="service-details.html" class="service-link">
+                  <span>Learn More</span> -->
+                  <!-- <i class="bi bi-arrow-right"></i> -->
+                </a>
+              </div>
+            </div>
+          </div><!-- End Service Item -->
+
+          <!-- <div class="col-md-6" data-aos="fade-left" data-aos-delay="100">
+            <div class="service-item">
+              <div class="service-icon">
+                <i class="bi bi-phone-fill"></i>
+              </div>
+              <div class="service-content">
+                <h3>Mobile App Solutions</h3>
+                <p>Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Vivamus magna justo, lacinia eget consectetur sed. Quisque velit nisi, pretium ut lacinia in, elementum id enim. Donec rutrum congue leo eget malesuada.</p>
+                <a href="service-details.html" class="service-link">
+                  <span>Learn More</span>
+                  <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div> --><!-- End Service Item -->
+
+          <!-- <div class="col-md-6" data-aos="fade-right" data-aos-delay="200">
+            <div class="service-item">
+              <div class="service-icon">
+                <i class="bi bi-palette2"></i>
+              </div>
+              <div class="service-content">
+                <h3>UI/UX Design</h3>
+                <p>Pellentesque in ipsum id orci porta dapibus. Proin eget tortor risus. Vivamus suscipit tortor eget felis porttitor volutpat. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui.</p>
+                <a href="service-details.html" class="service-link">
+                  <span>Learn More</span>
+                  <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div> --><!-- End Service Item -->
+
+          <!-- <div class="col-md-6" data-aos="fade-left" data-aos-delay="200">
+            <div class="service-item">
+              <div class="service-icon">
+                <i class="bi bi-bar-chart-line"></i>
+              </div>
+              <div class="service-content">
+                <h3>Digital Marketing</h3>
+                <p>Donec rutrum congue leo eget malesuada. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Nulla porttitor accumsan tincidunt. Curabitur aliquet quam id dui posuere blandit.</p>
+                <a href="service-details.html" class="service-link">
+                  <span>Learn More</span>
+                  <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div> --><!-- End Service Item -->
+
+          <!-- <div class="col-md-6" data-aos="fade-right" data-aos-delay="300">
+            <div class="service-item">
+              <div class="service-icon">
+                <i class="bi bi-cloud-check"></i>
+              </div>
+              <div class="service-content">
+                <h3>Cloud Computing</h3>
+                <p>Curabitur aliquet quam id dui posuere blandit. Sed porttitor lectus nibh. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Nulla quis lorem ut libero malesuada feugiat.</p>
+                <a href="service-details.html" class="service-link">
+                  <span>Learn More</span>
+                  <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div> --><!-- End Service Item -->
+
+          <!-- <div class="col-md-6" data-aos="fade-left" data-aos-delay="300">
+            <div class="service-item">
+              <div class="service-icon">
+                <i class="bi bi-shield-lock"></i>
+              </div>
+              <div class="service-content">
+                <h3>Cybersecurity Solutions</h3>
+                <p>Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Donec sollicitudin molestie malesuada. Curabitur arcu erat, accumsan id imperdiet et. Proin eget tortor risus.</p>
+                <a href="service-details.html" class="service-link">
+                  <span>Learn More</span>
+                  <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div> --><!-- End Service Item -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Services Section -->
+
+  </main>
+
+  <main class="main">
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Contact</h2>
+        <p>Feel free to get in touch for collaborations, project inquiries, or any questions. I’m always open to connecting and creating meaningful digital experiences together.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row g-4 g-lg-5">
+          <div class="col-lg-5">
+            <div class="info-box" data-aos="fade-up" data-aos-delay="200">
+              <h3>Contact Info</h3>
+              <p>Feel free to reach out for collaborations, project inquiries, or any questions</p>
+
+              <div class="info-item" data-aos="fade-up" data-aos-delay="300">
+              <div class="icon-box">
+                <a href="https://www.google.com/maps/search/?api=1&query=12/a+R+P+road+Velmurugan+Nager+Chrompet+Hasthinapurram" target="_blank">
+                  <i class="bi bi-geo-alt"></i>
+                </a>
+              </div>
+              <div class="content">
+                <h4>Location</h4>
+                <p>Chrompet, Hasthinapurram</p>
+              </div>
+            </div>
+
+              <div class="info-item" data-aos="fade-up" data-aos-delay="400">
+              <div class="icon-box">
+                <a href="tel:+917094631723" style="color: inherit;"><i class="bi bi-telephone"></i></a>
+              </div>
+              <div class="content">
+                <h4>Phone Number</h4>
+                <p>+91 70946 31723</p>
+              </div>
+            </div>
+
+
+              <div class="info-item" data-aos="fade-up" data-aos-delay="500">
+              <div class="icon-box">
+                <a href="mailto:sivaprakash0617@gmail.com">
+                  <i class="bi bi-envelope"></i>
+                </a>
+              </div>
+              <div class="content">
+                <h4>Email Address</h4>
+                <p>sivaprakash0617@gmail.com</p>
+              </div>
+            </div>
+            </div>
+          </div>
+
+          <div class="col-lg-7">
+            <div class="contact-form" data-aos="fade-up" data-aos-delay="300">
+              <h3>Get In Touch</h3>
+              <p>Feel free to contact me for any projects, collaborations, or inquiries. I will get back to you as soon as possible</p>
+
+              <form id="contact-form" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
+                  <div class="row gy-4">
+
+                    <div class="col-md-6">
+                      <input type="text" name="name" class="form-control" placeholder="Your Name" required>
+                    </div>
+
+                    <div class="col-md-6">
+                      <input type="email" name="email" class="form-control" placeholder="Your Email" required>
+                    </div>
+
+                    <div class="col-12">
+                      <input type="text" name="title" class="form-control" placeholder="Subject" required>
+                    </div>
+
+                    <div class="col-12">
+                      <textarea name="message" class="form-control" rows="6" placeholder="Message" required></textarea>
+                    </div>
+
+                    <div class="col-12 text-center">
+                      <button type="submit" class="btn btn-outline glow-btn" style="border:2px solid var(--accent-color);color:var(--accent-color);transition:all .3s ease;" onmouseover="this.style.background='linear-gradient(90deg, var(--accent-color), color-mix(in srgb, var(--accent-color), transparent 50%))';this.style.color='#fff';this.style.boxShadow='0 0 15px var(--accent-color)';" onmouseout="this.style.background='';this.style.color='var(--accent-color)';this.style.boxShadow='';">Send Message</button>
+
+                      <div id="notification" class="notification">Message Sent Successfully!</div>
+
+                    </div>
+
+                  </div>
+
+                </form>
+
+
+              <!-- <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
+                <div class="row gy-4">
+
+                  <div class="col-md-6">
+                    <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
+                  </div>
+
+                  <div class="col-md-6 ">
+                    <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
+                  </div>
+
+                  <div class="col-12">
+                    <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
+                  </div>
+
+                  <div class="col-12">
+                    <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
+                  </div>
+
+                  <div class="col-12 text-center">
+                    <div class="loading">Loading</div>
+                    <div class="error-message"></div>
+                    <div class="sent-message">Your message has been sent. Thank you!</div>
+
+                    <button type="submit" class="btn btn-outline">Send Message</button>
+
+                  </div>
+
+                </div>
+              </form> -->
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Contact Section -->
+
+  </main>
+
+  <script>
+  const sections = document.querySelectorAll("section");
+  const navLinks = document.querySelectorAll("#navmenu a");
+
+  window.addEventListener("scroll", () => {
+    let current = "";
+    sections.forEach(section => {
+      const sectionTop = section.offsetTop - 100;
+      if (scrollY >= sectionTop) {
+        current = section.getAttribute("id");
+      }
+    });
+
+    navLinks.forEach(link => {
+      link.classList.remove("active");
+      if (link.getAttribute("href") === "#" + current) {
+        link.classList.add("active");
+      }
+    });
+  });
+</script>
+
+
+
   <footer id="footer" class="footer">
 
     <div class="container">
       <div class="copyright text-center ">
-        <p>© <span>Copyright</span> <strong class="px-1 sitename">siva prakash</strong> <span>All Rights Reserved<br></span></p>
+        <p>© <span>Copyright</span> <strong class="px-1 sitename">sivaprakash</strong><span>All Rights Reserved<br></span></p>
       </div>
       <div class="social-links d-flex justify-content-center">
         <!-- <a href="https://twitter.com/YOUR_USERNAME" target="_blank" class="twitter"><i class="bi bi-twitter"></i></a> -->
         <a href="https://wa.me/7094631723" target="_blank" class="whatsapp"><i class="bi bi-whatsapp"></i></a>
         <a href="https://www.instagram.com/be_perfect.17" target="_blank" class="instagram"><i class="bi bi-instagram"></i></a>
-        <a href="https://www.linkedin.com/in/siva prakash A" target="_blank" class="linkedin"><i class="bi bi-linkedin"></i></a>
-
+        <a href="https://www.linkedin.com/in/siva-prakash-a-a6abbb31a" target="_blank" class="linkedin"><i class="bi bi-linkedin"></i></a>
       </div>
       <div class="credits">
         <!-- All the links in the footer should remain intact. -->
@@ -185,6 +853,41 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<script>
+  (function() {
+    emailjs.init("DQS2Ic7BjYGgkx8wt"); // Your Public Key
+  })();
+
+  const form = document.getElementById('contact-form');
+  const notification = document.getElementById('notification');
+
+  function showNotification(message, isError = false) {
+    notification.textContent = message;
+    notification.classList.toggle('error', isError);
+    notification.classList.add('show');
+
+    // Hide after 3 seconds
+    setTimeout(() => {
+      notification.classList.remove('show');
+    }, 3000);
+  }
+
+  form.addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    emailjs.sendForm('service_jzc7jqc', 'template_zbl64ku', this)
+      .then(function() {
+        showNotification('Message Sent Successfully!');
+        form.reset();
+      }, function(error) {
+        showNotification('Failed to Send Message. Please Try Again!', true);
+        console.error('FAILED...', error);
+      });
+  });
+</script>
+
 
 </body>
 
